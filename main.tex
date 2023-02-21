@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage[margin=0.75in]{geometry}
+\geometry{a4paper}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{lipsum}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+ }
+
+\usepackage{fontspec}
+\setmainfont{Lato}
+
+\usepackage[backend=bibtex,style=ieee]{biblatex}
+\addbibresource{references.bib}
+
+% Title
+\title{
+    \centerline{\includegraphics[width=50mm]{images/logo.pdf}}
+    \vspace{1cm}
+    Relatório de Atividades\\
+    Oficina -- \textit{Chatbots} com Python
+    \large  \\
+    Semestre Regular, 1/2023\\
+    \small Universidade Federal do Pampa, \textit{campus} Alegrete
+}
+
+\author{
+    Augusto Goulart\\
+    \texttt{josegoulart.aluno@unipampa.edu.br}
+}
+
+\date{21 de Fevereiro, 2023}
+
+%----------------------------------------
+\begin{document}
+\maketitle
+\input{sections/01_abstraction.tex}
+
+\newpage
+\input{sections/02_context.tex}
+\input{sections/03_method.tex}
+\input{sections/04_results.tex}
+
+% References
+\newpage
+\printbibliography
+\end{document}
